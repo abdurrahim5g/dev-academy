@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Academy</title>
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
+
+    <!-- custom style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- links on daisy UI and Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      module.exports = {
+        theme: {
+          container: {
+            width: "1200px",
+            maxWidth: {
+              "1/1": "100%",
+            },
+          },
+          color: {
+            white: "#ffffff",
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <header>
+      <div class="container 2xl:container mx-auto">
+        <div class="navbar flex-wrap md:justify-between">
+          <div class="navbar-start basis-full md:basis-0">
+            <a class="inline-block w-56 mx-auto md:mb-0 mb-4" href="#">
+              <img src="images/logo.png" alt="Dev Academy" class="" />
+            </a>
+          </div>
+          <div class="navbar-center lg:flex basis-6/12 md:basis-0">
+            <ul class="menu menu-horizontal p-0 hidden lg:flex">
+              <li>
+                <a href="#" class="hover:text-white hover:bg-sky-500 mx-0.5"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white hover:bg-sky-500 mx-0.5"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white hover:bg-sky-500 mx-0.5"
+                  >Success</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white hover:bg-sky-500 mx-0.5"
+                  >Courses</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white hover:bg-sky-500 mx-0.5"
+                  >Deals</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-white hover:bg-sky-500 mx-0.5"
+                  >Register</a
+                >
+              </li>
+            </ul>
+            <div class="dropdown">
+              <label
+                tabindex="0"
+                class="btn btn-outline border-sky-500 text-sky-500 hover:border-sky-500 hover:bg-sky-500 hover:text-white lg:hidden"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-md w-52"
+              >
+                <li>
+                  <a href="#" class="hover:bg-sky-500 hover:text-white rounded">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="hover:bg-sky-500 hover:text-white rounded">
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="hover:bg-sky-500 hover:text-white rounded">
+                    Success
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="hover:bg-sky-500 hover:text-white rounded">
+                    Courses
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="hover:bg-sky-500 hover:text-white rounded">
+                    Deals
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="hover:bg-sky-500 hover:text-white rounded">
+                    Register
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar-end basis-6/12 md:basis-0">
+            <a
+              class="btn btn-outline border-sky-500 text-sky-500 hover:text-white hover:bg-sky-500 hover:border-sky-500 rounded-md px-10"
+              >Register</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- navbar end -->
+  </body>
+</html>

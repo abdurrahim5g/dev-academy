@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dev Academy</title>
+    <title>Dev Academy | A Digital Learning Platform</title>
     <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
 
     <!-- custom style -->
@@ -22,18 +22,17 @@
       module.exports = {
         theme: {
           container: {
-            width: "1200px",
-            maxWidth: {
-              "1/1": "100%",
-            },
+            center: true,
           },
-          color: {
+          colors: {
+            hello: "#000000",
             white: "#ffffff",
           },
         },
       };
     </script>
   </head>
+
   <body>
     <!-- navbar -->
     <header>
@@ -144,5 +143,116 @@
       </div>
     </header>
     <!-- navbar end -->
+
+    <!-- slider  -->
+    <section class="hero-slider px-4">
+      <div class="theme-container my-10 rounded-2xl overflow-hidden">
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="images/cover/cover-1.jpg" class="w-full" />
+
+            <div
+              class="absolute z-10 justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 md:flex hidden"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+            <div
+              class="overlay absolute w-full h-full bg-slate-700 opacity-50"
+            ></div>
+            <div
+              class="carousel-content absolute top-1/2 transform -translate-y-1/2 w-full lg:p-24 p-5"
+            >
+              <div class="lg:w-2/3 w-full mx-auto text-center">
+                <h2 class="text-white text-4xl lg:text-6xl font-bold">
+                  Welcome to <span class="text-sky-500">D</span>ev
+                  <span class="text-sky-500">A</span>cademy
+                </h2>
+                <p class="text-white text-lg my-7">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                </p>
+                <div class="button-area">
+                  <a
+                    href="#"
+                    class="btn btn-primary bg-sky-500 border-sky-500 hover:bg-sky-600 hover:border-sky-600"
+                    >Get Started</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- carousel-content-end -->
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="images/cover/cover-2.jpg" class="w-full" />
+            <div
+              class="absolute z-10 justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 md:flex hidden"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+            <div
+              class="overlay absolute w-full h-full bg-[#000] opacity-50"
+            ></div>
+            <div
+              class="carousel-content absolute top-1/2 transform -translate-y-1/2 w-full lg:p-24 p-5"
+            >
+              <div class="lg:w-2/3 w-full mx-auto text-center">
+                <h2 class="text-white lg:text-6xl text-4xl font-bold">
+                  Hello E-Learner
+                </h2>
+                <p class="text-white text-lg my-7">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                </p>
+                <div class="button-area">
+                  <a
+                    href="#"
+                    class="btn btn-primary bg-sky-500 border-sky-500 hover:bg-sky-600 hover:border-sky-600"
+                    >Get Started</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- carousel-content-end -->
+          </div>
+
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="images/cover/cover-3.jpg" class="w-full" />
+            <div
+              class="absolute z-10 justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 md:flex hidden"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+            <div
+              class="overlay absolute w-full h-full bg-slate-700 opacity-50"
+            ></div>
+            <div
+              class="carousel-content absolute top-1/2 transform -translate-y-1/2 w-full lg:p-24 p-5"
+            >
+              <div class="lg:w-2/3 w-full mx-auto text-center">
+                <h2 class="text-white lg:text-6xl text-4xl font-bold">
+                  Get Started Digital Learning
+                </h2>
+                <p class="text-white text-lg my-7">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                </p>
+                <div class="button-area">
+                  <a
+                    href="#"
+                    class="btn btn-primary bg-sky-500 border-sky-500 hover:bg-sky-600 hover:border-sky-600"
+                    >Get Started</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- carousel-content-end -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- slider end -->
   </body>
 </html>
